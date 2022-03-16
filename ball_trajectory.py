@@ -3,8 +3,6 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 g = 9.81
-x = 0
-y = 0
 vo_x = 10
 vo_y = 50
 fig, ax = plt.subplots()
@@ -13,7 +11,7 @@ ax.set_xlim(-10, 200)
 ax.set_ylim(-150, 150)
 
 x, y = [], []
-traj, = plt.plot([], [], 'bo')
+traj, = plt.plot([], [])
 
 def update(t):
     x.append(vo_x * t)
