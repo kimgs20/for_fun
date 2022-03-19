@@ -3,8 +3,6 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 g = 9.81
-x = 0
-y = 0
 vo_x = 10
 vo_y = 50
 fig, ax = plt.subplots()
@@ -21,5 +19,5 @@ def update(t):
     traj.set_data(x, y)
 
 ani = FuncAnimation(fig, update, frames=np.linspace(0, 12))
-ani.save('ball_trajectory.gif')
-# plt.show()
+# ani.save('ball_trajectory.gif')
+plt.show()
